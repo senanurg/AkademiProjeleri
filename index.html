@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="tr">
+	
+    
+<style>
+    #container {
+  border: 1px DodgerBlue;
+  width: 300px;
+}
+
+#footer {
+  width: 300px;
+  text-align: center;
+}
+
+th {
+  width: 400px;
+  height: 40px;
+  background-color:Violet ;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sutun4 {
+  width: 60px;
+}
+
+.sutun1, .sutun2, sutun3 {
+  width: 90px;
+}
+
+.button4 {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: Violet;
+}
+
+.button4:hover {
+  background-color: Violet;
+}
+
+.button1 {
+  width: 75px;
+  height: 60px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.button_equal {
+  background-color:Gray ; 
+}
+
+.button_equal:hover {
+  background-color:Purple ;
+  color: Gray;
+}
+
+#ekran_td {
+  width: 70px;
+  height: 60px;
+  border: 1px Gray;
+  border-radius: 1px;
+}
+
+#ekran {
+  width: 250px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  background-color: Violet;
+  color: white;
+}
+
+table {
+  background-color: SlateBlue;
+}
+
+.button_c {
+  background-color: Violet;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+  <form name="calc">
+  <table id="calc">
+    <tr><th colspan="4" style="border: 1px solid DodgerBlue ;">CALCULATOR </th></tr>
+    
+    <tr>
+      <td id="ekran_td" colspan="3"><input type="text" id="ekran" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" max-length="10" size="10" readonly size="10"></input></td>
+      <td><input id="btn" type=button value="C" OnClick="calc.display.value=''" class="button4 button_c"</td>  
+     </tr>
+    <tr>
+      <td class="sutun1"><input id="btn" type=button value="1" class="button1" OnClick="calc.display.value+='1'"></td>
+      <td class="sutun2"><input id="btn" type=button value="2" class="button1" OnClick="calc.display.value+='2'"></td>
+      <td class="sutun3"><input id="btn" type=button value="3" class="button1" OnClick="calc.display.value+='3'"></td>
+      <td class="sutun4"><input id="btn" type=button value="/" class="button4" OnClick="calc.display.value+='/'"></td>
+    </tr>
+    <tr>
+      <td class="sutun1"><input id="btn" type=button value="4" class="button1" OnClick="calc.display.value+='4'"></td>
+      <td class="sutun2"><input id="btn" type=button value="5" class="button1" OnClick="calc.display.value+='5'"></td>
+      <td class="sutun3"><input id="btn" type=button value="6" class="button1" OnClick="calc.display.value+='6'"></td>
+      <td class="sutun4"><input id="btn" type=button value="-" class="button4" OnClick="calc.display.value+='-'"></td>
+    </tr>
+    <tr>
+      <td class="sutun1"><input id="btn" type=button value="7" class="button1" OnClick="calc.display.value+='7'"></td>
+      <td class="sutun2"><input id="btn" type=button value="8" class="button1" OnClick="calc.display.value+='8'"></td>
+      <td class="sutun3"><input id="btn" type=button value="9" class="button1" OnClick="calc.display.value+='9'"></td>
+      <td class="sutun4"><input id="btn" type=button value="+" class="button4" OnClick="calc.display.value+='+'"></td>
+    </tr>
+    <tr>
+      <td class="sutun1"><input id="btn" type=button value="." class="button1" OnClick="calc.display.value+='.'"></td>
+      <td class="sutun2"><input id="btn" type=button value="0" class="button1" OnClick="calc.display.value+='0'"></td>
+      <td class="sutun3"><input id="btn" type=button value="=" class="button1 button_equal" OnClick="calc.display.value=eval(calc.display.value)"></td>
+      <td class="sutun4"><input id="btn" type=button value="*" class="button4" OnClick="calc.display.value+='*'"></td>
+    </tr>
+    <tr></tr>
+  </table>
+</form>
+<div id="footer"> <small><strong></strong> SENA NUR GÜNGEZ <br> <abbr title="Meram Gelişim Akademisi">MEGA</abbr> Yazılım Akademisi & Üretken Akademi</small>
+</div>
+</div>
+
+</body>
+</html>
